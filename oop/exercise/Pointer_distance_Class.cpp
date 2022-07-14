@@ -29,10 +29,10 @@ float pointDistance(Point a, Point b)
 
 int main()
 {
-     Point a(1, 1);
+     Point a(1, 0);
      a.DislayData();
 
-     Point b(3, 5);
+     Point b(70, 0);
      b.DislayData();
 
      float value = pointDistance(a,b);
