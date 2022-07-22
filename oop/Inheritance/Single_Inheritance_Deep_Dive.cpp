@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/* Multilevel Inheritance
+     A ----> B
+*/
+
 class Base
 {
      int data1;
@@ -54,6 +58,10 @@ void Derived::display()
      cout << "Value of data 2 is " << data2 << endl;
      cout << "Value of data 3 is " << data3 << endl;
 }
+
+/* Multilevel Inheritance
+     Base ----> Derived
+*/
 
 int main()
 {

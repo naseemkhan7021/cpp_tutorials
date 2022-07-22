@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+/* Multilevel Inheritance
+     A ----> B ----> C
+*/
+
 class Student
 {
 protected:
@@ -47,6 +51,10 @@ public:
           cout << "Your result is " << (math + physics) / 2 << "%" << endl;
      }
 };
+
+/* Multilevel Inheritance
+     Student ----> Exam ----> Result
+*/
 
 int main()
 {
