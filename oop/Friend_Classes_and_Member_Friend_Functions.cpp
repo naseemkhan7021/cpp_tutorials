@@ -2,16 +2,16 @@
 using namespace std;
 
 // forward declaration
-class Complax;
+class Complex;
 
 class Calculator
 {
 public:
-     int sumRealComplax(Complax, Complax);
-     int sumComComplax(Complax, Complax);
+     int sumRealComplex(Complex, Complex);
+     int sumComComplex(Complex, Complex);
 };
 
-class Complax
+class Complex
 {
      int a, b;
      // Individually declaring functions as friends
@@ -27,36 +27,36 @@ public:
           a = v1;
           b = v2;
      }
-     void dislayData()
+     void displayData()
      {
-          cout << "Complax number is " << a << "+" << b << "i" << endl;
+          cout << "Complex number is " << a << "+" << b << "i" << endl;
      }
 };
 
-int Calculator::sumRealComplax(Complax C1, Complax C2)
+int Calculator::sumRealComplex(Complex C1, Complex C2)
 {
      return (C1.a + C2.a);
 };
 
-int Calculator::sumComComplax(Complax C1, Complax C2)
+int Calculator::sumComComplex(Complex C1, Complex C2)
 {
      return (C1.b + C2.b);
 };
 
 int main()
 {
-     Complax c1,c2;
+     Complex c1,c2;
      c1.setData(1,2);
-     c1.dislayData();
+     c1.displayData();
 
      c2.setData(3,4);
-     c2.dislayData();
+     c2.displayData();
 
      Calculator cal;
-     int realNumber = cal.sumRealComplax(c1,c2);
+     int realNumber = cal.sumRealComplex(c1,c2);
      cout<<"The sum of real part of number c1 and c2 "<<realNumber<<endl;
-     int complaxNumber = cal.sumComComplax(c1,c2);
-     cout<<"The sum of Complax part of number c1 and c2 "<<complaxNumber<<"i"<<endl;
+     int complexNumber = cal.sumComComplex(c1,c2);
+     cout<<"The sum of Complex part of number c1 and c2 "<<complexNumber<<"i"<<endl;
 
      return 0;
 }

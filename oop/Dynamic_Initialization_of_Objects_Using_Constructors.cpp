@@ -5,7 +5,7 @@ using namespace std;
 class BankDeposit
 {
      int years, principal;
-     float interastRate, returnValue;
+     float interestRate, returnValue;
 
 public:
      BankDeposit(){};
@@ -18,11 +18,11 @@ BankDeposit::BankDeposit(int p, int y, float r)
 {
      principal = p;
      years = y;
-     interastRate = r;
+     interestRate = r;
      returnValue = principal;
      for (int i = 0; i < y; i++)
      {
-          returnValue *= (1 + interastRate);
+          returnValue *= (1 + interestRate);
      }
 }
 
@@ -30,11 +30,11 @@ BankDeposit::BankDeposit(int p, int y, int r)
 {
      principal = p;
      years = y;
-     interastRate = float(r) / 100;
+     interestRate = float(r) / 100;
      returnValue = principal;
      for (int i = 0; i < y; i++)
      {
-          returnValue *= (1 + interastRate);
+          returnValue *= (1 + interestRate);
      }
 }
 

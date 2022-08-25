@@ -3,7 +3,7 @@ using namespace std;
 
 class Shop
 {
-     // private: // by default this will be privete
+     // private: // by default this will be privet
      int itemId[100];
      int itemPrice[100];
      int counter = 0;
@@ -43,7 +43,7 @@ int main()
           if (i == 0)
           {
                char yn;
-               cout << "Do you want to add more item? (y/n)" << endl; // cas sansitive
+               cout << "Do you want to add more item? (y/n)" << endl; // cas sensitive
                cin >> yn;
                if (yn == 'y')
                {

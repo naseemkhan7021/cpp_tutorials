@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Complax{
+class Complex{
      int real,imaginary;
      public:
      void getData(){
@@ -15,16 +15,16 @@ class Complax{
 };
 
 int main(){
-     Complax c1;
-     Complax *ptr1 = &c1;
+     Complex c1;
+     Complex *ptr1 = &c1;
      (*ptr1).setData(2,4);
      (*ptr1).getData();
      // we can use arrow
-     Complax *ptr2 = new Complax; // we can use new operators
+     Complex *ptr2 = new Complex; // we can use new operators
      ptr2->setData(6,10); // we can use arrow for access pointers
      ptr2->getData();
      // array of objects
-     Complax *ptr3 = new Complax[5];
+     Complex *ptr3 = new Complex[5];
      ptr2->setData(12,16); // we can use arrow for access pointers
      ptr2->getData();
      

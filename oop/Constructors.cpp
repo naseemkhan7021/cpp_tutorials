@@ -25,7 +25,7 @@ public:
      //      b = 21;
      // }
 
-     void dislayData()
+     void displayData()
      {
           cout << "Complex number is " << a << "+" << b << "i" << endl;
      }
@@ -46,16 +46,16 @@ int main()
 {
      // for default constructor
      // Complex c1;
-     // c1.dislayData();
+     // c1.displayData();
 
      // for parameterized constructor
      // Implicit call
      Complex a(4, 6);
-     a.dislayData();
+     a.displayData();
 
      // Explicit call
      Complex b = Complex(5, 7);
-     b.dislayData();
+     b.displayData();
 
      return 0;
 }

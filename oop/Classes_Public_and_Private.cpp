@@ -21,12 +21,12 @@ void Programmer::setData(int accountNumberArg){
 
 int main(){
      cout<<"Hello World from C++"<<endl;
-     Programmer progrmmer;
-     // progrmmer.accountNumber = 156; // this will be give error becouse "accountNumber" is private
-     progrmmer.name = "Programmer_1";
-     progrmmer.programmingLanguage = "c++";
-     progrmmer.setData(6174);
-     progrmmer.getData();
+     Programmer programmer;
+     // programmer.accountNumber = 156; // this will be give error because "accountNumber" is private
+     programmer.name = "Programmer_1";
+     programmer.programmingLanguage = "c++";
+     programmer.setData(6174);
+     programmer.getData();
 
      return 0;
 }
